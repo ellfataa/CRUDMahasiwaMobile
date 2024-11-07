@@ -75,11 +75,11 @@ Shift Baru  : C
 
       Kode dibawah ini menampilkan header bertuliskan "Data Mahasiswa" dengan efek transparan, serta tombol "Tambah Mahasiswa" yang memanggil fungsi `openModalTambah()` saat diklik untuk menambahkan data mahasiswa.
 
-      ![image](https://github.com/user-attachments/assets/0da15cce-e3b8-455c-b7ce-d17dde06d7d4)
+   ![image](https://github.com/user-attachments/assets/0da15cce-e3b8-455c-b7ce-d17dde06d7d4)
 
       Kode dibawah mendefinisikan modal "Tambah Mahasiswa" yang muncul saat `modalTambah` diaktifkan. Modal ini memiliki tombol "Batal" untuk menutup modal dan form input untuk mengisi nama dan jurusan mahasiswa, yang terikat pada variabel `nama` dan `jurusan`. Setelah data diisi, tombol "Tambah Mahasiswa" memanggil fungsi `tambahMahasiswa()` untuk menambahkan data mahasiswa.
 
-      ![image](https://github.com/user-attachments/assets/a0357f6b-7162-4683-9f35-969288dc9d8d)
+   ![image](https://github.com/user-attachments/assets/a0357f6b-7162-4683-9f35-969288dc9d8d)
 
       Kode dibawah membuat modal "Edit Mahasiswa" yang ditampilkan saat `modalEdit` aktif. Modal ini memiliki tombol "Batal" untuk menutup modal dan dua input untuk mengedit nama dan jurusan mahasiswa, yang terhubung ke variabel `nama` dan `jurusan`. Tombol "Simpan Perubahan" akan memanggil fungsi `editMahasiswa()` untuk menyimpan perubahan data mahasiswa.
 
@@ -87,23 +87,23 @@ Shift Baru  : C
 
       Kode dibawah menampilkan daftar mahasiswa menggunakan `<ion-card>` yang berulang untuk setiap item di `dataMahasiswa`. Setiap kartu menampilkan nama dan jurusan mahasiswa, serta dua tombol: "Edit" untuk membuka modal edit dengan `openModalEdit()` dan "Hapus" untuk menghapus data mahasiswa menggunakan fungsi `hapusMahasiswa()`.
 
-      ![image](https://github.com/user-attachments/assets/7e742f96-221e-4dcd-a0b7-15a0f6178c7d)
+   ![image](https://github.com/user-attachments/assets/7e742f96-221e-4dcd-a0b7-15a0f6178c7d)
 
-   ========================================================================================================
+   ================================================
 
    **b) File mahasiswa.page.ts**
 
-        ![image](https://github.com/user-attachments/assets/f3af76eb-146c-4e2a-a57d-6cd8c82c61cc)
+   ![image](https://github.com/user-attachments/assets/6a097513-b19f-4e01-a8d8-076f22d03b90)
 
-        ![image](https://github.com/user-attachments/assets/38c49399-f938-4dd3-b5c8-e6e6aa8787a7)
+   ![image](https://github.com/user-attachments/assets/d97a4e4a-1a86-40bd-9aa8-2cd87d6c10be)
 
-        ![image](https://github.com/user-attachments/assets/e4a44580-f5c1-4212-b7c4-39aa42941308)
+   ![image](https://github.com/user-attachments/assets/1e6776cb-5394-4410-856e-28a6ab44b220)
 
-        Kode diatas merupakan komponen Angular untuk halaman "Mahasiswa" dalam aplikasi Ionic yang mengelola data mahasiswa melalui berbagai interaksi. Komponen ini menggunakan `ModalController` dan `AlertController` dari Ionic untuk menampilkan modal (popup) dan alert konfirmasi. Data mahasiswa disimpan dalam array `dataMahasiswa`, dan komponen ini menyediakan fitur untuk menambah, mengedit, dan menghapus data mahasiswa melalui API dengan memanfaatkan `ApiService`. Variabel seperti `id`, `nama`, dan `jurusan` digunakan untuk menyimpan data mahasiswa yang sedang dipilih atau diubah.
+   Kode diatas merupakan komponen Angular untuk halaman "Mahasiswa" dalam aplikasi Ionic yang mengelola data mahasiswa melalui berbagai interaksi. Komponen ini menggunakan `ModalController` dan `AlertController` dari Ionic untuk menampilkan modal (popup) dan alert konfirmasi. Data mahasiswa disimpan dalam array `dataMahasiswa`, dan komponen ini menyediakan fitur untuk menambah, mengedit, dan menghapus data mahasiswa melalui API dengan memanfaatkan `ApiService`. Variabel seperti `id`, `nama`, dan `jurusan` digunakan untuk menyimpan data mahasiswa yang sedang dipilih atau diubah.
 
-        Pada saat halaman dimuat, fungsi `ngOnInit()` akan memanggil metode `getMahasiswa()` untuk mengambil data mahasiswa dari server dan menampilkannya di halaman. Fungsi `tambahMahasiswa()` digunakan untuk menambahkan mahasiswa baru ke dalam daftar jika input nama dan jurusan telah diisi, sedangkan `editMahasiswa()` digunakan untuk mengedit data mahasiswa yang sudah ada. Kedua proses ini berinteraksi dengan API untuk menyimpan perubahan data, dan setelah berhasil, halaman akan diperbarui secara otomatis.
+   Pada saat halaman dimuat, fungsi `ngOnInit()` akan memanggil metode `getMahasiswa()` untuk mengambil data mahasiswa dari server dan menampilkannya di halaman. Fungsi `tambahMahasiswa()` digunakan untuk menambahkan mahasiswa baru ke dalam daftar jika input nama dan jurusan telah diisi, sedangkan `editMahasiswa()` digunakan untuk mengedit data mahasiswa yang sudah ada. Kedua proses ini berinteraksi dengan API untuk menyimpan perubahan data, dan setelah berhasil, halaman akan diperbarui secara otomatis.
 
-        Fungsi lainnya, seperti `hapusMahasiswa()`, akan menampilkan konfirmasi melalui alert sebelum menghapus data mahasiswa dari server. Modal untuk menambah atau mengedit data mahasiswa dibuka dengan memanggil fungsi `openModalTambah()` atau `openModalEdit()`, yang memungkinkan pengguna untuk melakukan perubahan pada data. Setelah modal ditutup, input form akan direset menggunakan fungsi `resetModal()`, yang memastikan tidak ada data lama yang tertinggal di form.
+   Fungsi lainnya, seperti `hapusMahasiswa()`, akan menampilkan konfirmasi melalui alert sebelum menghapus data mahasiswa dari server. Modal untuk menambah atau mengedit data mahasiswa dibuka dengan memanggil fungsi `openModalTambah()` atau `openModalEdit()`, yang memungkinkan pengguna untuk melakukan perubahan pada data. Setelah modal ditutup, input form akan direset menggunakan fungsi `resetModal()`, yang memastikan tidak ada data lama yang tertinggal di form.
 
 =======================================================
 
