@@ -11,7 +11,7 @@ Shift Baru  : C
 
 =====================================================
 
-Penjelasan PROSES CRUD
+**Penjelasan PROSES CRUD**
 
 1. Pertama-tama kita membuat Database API nya terlebih dahulu, disini saya membuat database dengan nama db_mhs. Lalu didalamnya terdapat sebuah tabel mahasiswa yang digunakan untuk proses CRUD nya.
 
@@ -57,7 +57,7 @@ Penjelasan PROSES CRUD
 
       File edit.php digunakan untuk mengedit data mahasiswa yang tadinya sudah ditambah terlebih dahulu.
   
-4. Setelah membuat file-file .php nya, lalu kita membuat projek ionicnya seperti biasa dengan memasukkan perintah ionic star 'nama_projek', lalu pilih framework Angular dan pilih template blank
+4. Setelah membuat file-file .php nya, lalu kita membuat projek ionicnya seperti biasa dengan memasukkan perintah ionic start 'nama_projek', lalu pilih framework Angular dan pilih template blank
 
 5. Selanjutnya ketika projek ionic nya sudah berhasil dibuat lalu kita membuat halaman mahasiswa dengan memasukkan perintah "ionic g pg mahasiswa", serta membuat service API dengan perintah "ionic g s service/api" 
 
